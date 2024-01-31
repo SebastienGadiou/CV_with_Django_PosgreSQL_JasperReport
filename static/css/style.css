@@ -1,0 +1,14 @@
+
+
+.col-md-12{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #936E91;
+  max-width: 800px;
+  border-radius: 40px;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 10px;
+}

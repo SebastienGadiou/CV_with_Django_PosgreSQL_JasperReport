@@ -1,0 +1,94 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <title>CV creation </title>
+
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'CV' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'CV_HTML' %}">Your CV in HTML </a>
+      </li>
+	        <li class="nav-item">
+        <a class="nav-link" href="{% url 'PDF' %}">PDF </a>
+      </li>
+
+  </div>
+  </nav>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <h3 class="text-center"> Fill up the fields to get your CV generated </h3>
+        </div>
+      </div>
+		<form class="" method="post" action="">
+                {% csrf_token %}
+			<div class="row justify-content-center">
+							<div class="col-md-6 form-group">
+								<input name = 'Firstname' type="text" class="form-control"  id="Firstname" placeholder="Firstname" data-rule="minlen:4"/>
+							<div class="form-group">
+								<input name = 'Lastname' type="text" class="form-control"  id="Lastname" placeholder="Lastname" data-rule="minlen:4"/>
+							<div class="form-group">
+								<input name = 'email' type="text" class="form-control" id="email" placeholder="email" data-rule="minlen:4"/>
+							<div class="form-group">
+								<input name = 'descript' type="text" class="form-control" id="descript" placeholder="describe yourself" data-rule="minlen:4"/>
+							<div class="form-group">
+								<input name = 'phone' type="text" class="form-control"  id="phone" placeholder="Phone" data-rule="minlen:4"/>
+							<div class="form-group">
+								<input name = 'linkedin_URL' type="text" class="form-control"  id="linkedin_URL" placeholder="linkedin_URL" data-rule="minlen:4" />
+							<div class="form-group">
+								<input name = 'Git_URL' type="text" class="form-control"  id="Git_URL" placeholder="Git_URL" data-rule="minlen:4" />
+							<div class="form-group">
+								<input name = 'Company1' type="text" class="form-control"  id="Company1" placeholder="Company1" data-rule="minlen:4"  />
+							<div class="form-group">
+								<input name = 'Experience1' type="text" class="form-control"  id="Experience1" placeholder="Experience1" data-rule="minlen:4"/>
+							<div class="form-group">
+								<input name = 'Company2' type="text" class="form-control"  id="Company2" placeholder="Company2" data-rule="minlen:4"/>
+							<div class="form-group">
+								<input name = 'Experience2' type="text" class="form-control"  id="Experience2" placeholder="Experience2" data-rule="minlen:4"/>
+							<div class="form-group">
+								<input name = 'Company3' type="text" class="form-control"  id="Company3" placeholder="Company3" data-rule="minlen:4"/>
+							<div class="form-group">
+								<input name = 'Experience3' type="text" class="form-control"  id="Experience3" placeholder="Experience3" data-rule="minlen:4"/>
+							<form class="form-group">
+								<input name = 'Diplome1' type="text" class="form-control"  id="Diplome1" placeholder="Diplome1" data-rule="minlen:4"/>
+							<div class="form-group">
+								<input name = 'Description1' type="text" class="form-control"  id="Description1" placeholder="Diplome description" data-rule="minlen:4"/>
+
+								<br>
+								<br>
+
+							<span>Check the box if you are human </span>
+							<input type="checkbox" id="human" name="human"  unchecked= "unchecked" 	onclick="showhidebutton()">
+							<script>
+
+							function showhidebutton() {
+								if(document.getElementById('human').checked) {
+
+								document.getElementById('submit').style.display='block';
+								}
+
+								else {
+								document.getElementById('submit').style.display='none';
+								}
+							}
+							</script>
+							<br>
+							<br>
+							<div class="col-12">
+								<button type="submit" id="submit" class="btn btn-primary" onclick="" style="display: none">Submit</button>
+							</div>
+			</div>
+		</form>
+	  </div>
+	</div>
+  </body>
+</html>

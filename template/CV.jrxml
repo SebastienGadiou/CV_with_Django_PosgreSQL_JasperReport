@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="29f4b77f-721b-4bd8-9ee7-033804ee8587">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="postgresjasper.jrdax"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[SELECT id, descript, "linkedin_URL", "Git_URL", "Experience1", "Experience2", "Experience3", "Experience4", "Diplome1", "Description1", "Company1", "Company2", "Company3", "Company4", email, phone, "FirstName", "Lastname"
+	FROM public."createCV_allaboutme";]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="descript" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descript"/>
+		<property name="com.jaspersoft.studio.field.label" value="descript"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="linkedin_URL" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="linkedin_URL"/>
+		<property name="com.jaspersoft.studio.field.label" value="linkedin_URL"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Git_URL" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Git_URL"/>
+		<property name="com.jaspersoft.studio.field.label" value="Git_URL"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Experience1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Experience1"/>
+		<property name="com.jaspersoft.studio.field.label" value="Experience1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Experience2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Experience2"/>
+		<property name="com.jaspersoft.studio.field.label" value="Experience2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Experience3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Experience3"/>
+		<property name="com.jaspersoft.studio.field.label" value="Experience3"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Experience4" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Experience4"/>
+		<property name="com.jaspersoft.studio.field.label" value="Experience4"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Diplome1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Diplome1"/>
+		<property name="com.jaspersoft.studio.field.label" value="Diplome1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Description1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Description1"/>
+		<property name="com.jaspersoft.studio.field.label" value="Description1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Company1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Company1"/>
+		<property name="com.jaspersoft.studio.field.label" value="Company1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Company2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Company2"/>
+		<property name="com.jaspersoft.studio.field.label" value="Company2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Company3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Company3"/>
+		<property name="com.jaspersoft.studio.field.label" value="Company3"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Company4" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Company4"/>
+		<property name="com.jaspersoft.studio.field.label" value="Company4"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="email"/>
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="phone" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="phone"/>
+		<property name="com.jaspersoft.studio.field.label" value="phone"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="FirstName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FirstName"/>
+		<property name="com.jaspersoft.studio.field.label" value="FirstName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<field name="Lastname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Lastname"/>
+		<property name="com.jaspersoft.studio.field.label" value="Lastname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="createCV_allaboutme"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="170" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="40" y="97" width="508" height="32" backcolor="#D1CDCD" uuid="fa1bb5ee-0b5d-418c-a946-9ace480e41bd"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[About me : ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="1" width="32" height="161" backcolor="#B8DFF5" uuid="fe7e2a94-500c-4300-9536-5fd39714d8d3"/>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="39" y="4" width="50" height="20" uuid="079140e6-dab7-4c23-8194-fd21739bb9d3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Cooper Black" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FirstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="4" width="110" height="20" uuid="c9ae47dd-21b1-4ee0-a36f-02e1520f287e"/>
+				<textElement textAlignment="Left">
+					<font fontName="Cooper Black" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Lastname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="41" y="129" width="508" height="32" uuid="358e88e5-5f0c-4904-9afd-9bd635ba799b"/>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{descript}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="24" width="100" height="16" uuid="7b3f759f-7a39-4661-bb1f-19a8c7ed8a7e"/>
+				<textFieldExpression><![CDATA[$F{phone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="40" width="80" height="20" uuid="25054358-bd83-4e7e-9361-aeba22c387be"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="60" width="100" height="18" uuid="52b32d38-797a-4cee-ac66-466223cb9f14"/>
+				<textFieldExpression><![CDATA[$F{linkedin_URL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="78" width="100" height="18" uuid="3c277ffa-70a6-45d1-b55e-00e98e407896"/>
+				<textFieldExpression><![CDATA[$F{Git_URL}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="496" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="1" width="32" height="493" backcolor="#CFF5BA" uuid="8267bd3b-d3f6-4143-ace9-ae041390d3f0"/>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="40" y="300" width="508" height="20" uuid="1d51d50c-5a1e-4e00-aed4-78a3b863c288"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Britannic Bold" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Diploma :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="400" width="508" height="20" uuid="51a07260-fd6b-4311-8691-4b5091dafb7f"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Britannic Bold" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Languages:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="141" y="83" width="408" height="30" uuid="d2144ddc-280b-44b6-bf4c-6291d950fa6f"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{Experience1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="10" width="508" height="20" uuid="4938fa51-8aad-4e1d-9e54-eca28cca84cd"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Britannic Bold" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Experiences:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="41" y="83" width="100" height="30" uuid="e87f9024-68dc-4027-9458-5bf306604c80"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ink Free" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Company1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="133" width="408" height="30" uuid="62869484-66fe-435f-b30e-86a14fc694ab"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{Experience1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="41" y="133" width="100" height="30" uuid="6f0fb994-4117-4a25-8305-3bd7ed8db3d5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ink Free" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Company2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="182" width="408" height="30" uuid="c163780e-5b02-4a1d-815e-cb0b041107bc"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{Experience3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="41" y="182" width="100" height="30" uuid="474a7c91-f081-4c97-be18-7d031bb8a7a6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ink Free" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Company3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="350" width="108" height="20" uuid="89e033d9-227b-451c-86af-225626ff27cd"/>
+				<textFieldExpression><![CDATA[$F{Diplome1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="350" width="400" height="20" uuid="bc159f97-a7ff-493c-a32a-f82505fec8c6"/>
+				<textFieldExpression><![CDATA[$F{Description1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="50"/>
+	</summary>
+</jasperReport>
