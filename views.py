@@ -1,6 +1,10 @@
+import subprocess
+
 from django.shortcuts import render
 from .models import allaboutme
-from django.http import FileResponse, Http404
+from django.http import HttpResponse, FileResponse
+from subprocess import run, PIPE
+import sys
 
 
 def CV(request):
@@ -10,6 +14,7 @@ def CV(request):
         Firstname = request.POST.get('Firstname')
         Lastname = request.POST.get('Lastname')
         email = request.POST.get('email')
+        descript =request.POST.get('descript')
         phone = request.POST.get('phone')
         linkedin_URL = request.POST.get('linkedin_URL')
         Git_URL = request.POST.get('Git_URL')
@@ -24,6 +29,7 @@ def CV(request):
         info.FirstName = Firstname
         info.Lastname = Lastname
         info.email = email
+        info.descript = descript
         info.phone = phone
         info.linkedin_URL=linkedin_URL
         info.Git_URL = Git_URL
@@ -39,16 +45,28 @@ def CV(request):
     return render(request, 'contact.html')
 
 def test(request):
+    try:
+        return render(request,'CV.html')
+    except:
+        return HttpResponse("<b><center>You did not generate your files, please return to the main page and click on the link</center></b>")
 
-    return render(request,'CV.html')
 
-
+def python_script(request):
+    run([sys.executable, 'C:\\Users\\Put your path here\\creationPDF.py'], shell=False, stdout=PIPE)
+    return HttpResponse("<b><center>Your CV in PDF and HTML format have been created</center></b>")
 
 def pdf_view(request):
     pdf_path = r'C:\Users\Put your path here\template\CV.pdf'
-    with open(pdf_path,'rb') as pdf_file:
-        response=FileResponse('pdf_path', content_type='application/pdf')
-        response['Content-Disposition']='inline;filename=CV.pdf'
-        return response
+    subprocess.Popen([pdf_path], shell=True)
+    return HttpResponse("<b>Your PDF file should be opening now </b>")
+
+
+    #with open(pdf_path,'rb') as pdf_file:
+        #response=FileResponse('pdf_path', content_type='application/pdf')
+        #response['Content-Disposition']='inline;filename=CV.pdf'
+        #return response
+
+
+
 
 

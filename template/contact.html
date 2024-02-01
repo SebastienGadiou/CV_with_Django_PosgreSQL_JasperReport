@@ -12,14 +12,16 @@
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'CV' %}">Home <span class="sr-only">(current)</span></a>
       </li>
+	  <li class="nav-item">
+        <a class="nav-link" href = "{% url 'script' %}">Create your CV in PDF and HTML</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'CV_HTML' %}">Your CV in HTML </a>
       </li>
-	        <li class="nav-item">
-        <a class="nav-link" href="{% url 'PDF' %}">PDF </a>
+	  <br>
+	  <li class="nav-item">
+        <a class="nav-link" href = "{% url 'PDF' %}">View your PDF file here </a>
       </li>
-
-  </div>
   </nav>
   <body>
 
