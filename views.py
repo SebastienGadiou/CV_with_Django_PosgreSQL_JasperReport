@@ -52,7 +52,7 @@ def test(request):
 
 
 def python_script(request):
-    run([sys.executable, 'C:\\Users\\Put your path here\\creationPDF.py'], shell=False, stdout=PIPE)
+    run([sys.executable, 'C:\\Users\\Put your path here\\main.py'], shell=False, stdout=PIPE)
     return HttpResponse("<b><center>Your CV in PDF and HTML format have been created</center></b>")
 
 def pdf_view(request):
