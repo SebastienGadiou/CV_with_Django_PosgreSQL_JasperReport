@@ -27,13 +27,13 @@ The templates used are as follows:
 I hope to provide more Jasper templates in the future. The one provided is relatively simple.
 
 Issue encountered: as said above the PDF can only be open and read directly from the folder where it was created.
-When open within browser : got an error : Failed to load PDF document.
-When downloading it instead of displaying it : The download file in Chrome can not be open.
+When open within browser : got an error : Failed to load PDF document. (fixed)
+When downloading it instead of displaying it : The download file in Chrome can not be open. (fixed)
 
 Next steps :  
 
-Create the PDF by a click button or a click link.( nearly done)
-Throwing an error message if you click on link and the 2 files have not been generated before ( nearly done) 
+Create the PDF by a click button or a click link.(done)
+Throwing an error message if you click on link and the 2 files have not been generated before (done) 
 
 
 
